@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "@whyour/qinglong",
+  "version": "0.0.1",
+  "description": "Timed task management platform supporting Python3, JavaScript, Shell, Typescript",
   "scripts": {
     "start": "concurrently -n w: npm:start:*",
     "start:front": "max dev",
@@ -28,6 +30,17 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "files": [
+    "docker/**/*",
+    "public/**/*",
+    "sample/**/*",
+    "shell/**/*",
+    "static/**/*",
+    "ecosystem.config.js",
+    ".env.example",
+    ".npmrc",
+    "version.yaml"
+  ],
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
