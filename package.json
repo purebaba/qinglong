@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "@whyour/qinglong",
+  "version": "2.15.14",
+  "description": "Timed task management platform supporting Python3, JavaScript, Shell, Typescript",
   "scripts": {
     "start": "concurrently -n w: npm:start:*",
     "start:front": "max dev",
@@ -27,6 +29,20 @@
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
     ]
+  },
+  "files": [
+    "public/**/*",
+    "sample/**/*",
+    "shell/**/*",
+    "static/**/*",
+    "ecosystem.config.js",
+    ".env.example",
+    ".npmrc",
+    "version.yaml"
+  ],
+  "bin": {
+    "ql": "shell/update.sh",
+    "task": "shell/task.sh"
   },
   "pnpm": {
     "peerDependencyRules": {
