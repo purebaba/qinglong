@@ -5,6 +5,9 @@ const baseUrl = process.env.QlBaseUrl || '/';
 export default defineConfig({
   hash: true,
   antd: {},
+  locale: {
+    antd: true,
+  },
   outputPath: 'static/dist',
   fastRefresh: true,
   favicons: [`https://qn.whyour.cn/favicon.svg`],

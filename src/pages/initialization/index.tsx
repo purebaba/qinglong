@@ -82,9 +82,7 @@ const Initialization = () => {
           <div className={styles.header}>
             <span className={styles.title}>欢迎使用青龙</span>
             <span className={styles.desc}>
-              支持python3、javaScript、shell、typescript 的定时任务管理面板（A
-              timed task management panel that supports typescript, javaScript,
-              python3, and shell.）
+              支持python3、javaScript、shell、typescript 的定时任务管理面板
             </span>
           </div>
           <div className={styles.action}>
