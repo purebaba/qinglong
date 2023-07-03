@@ -1,4 +1,4 @@
-FROM python:3.10-alpine as builder
+FROM python:3.10 as builder
 COPY package.json .npmrc pnpm-lock.yaml /tmp/build/
 RUN set -x \
   && apk update \
@@ -7,9 +7,9 @@ RUN set -x \
   && cd /tmp/build \
   && pnpm --registry https://registry.npmmirror.com install --prod
 
-FROM python:3.10-alpine
+FROM python:3.10
 
-ARG QL_MAINTAINER="whyour"
+ARG QL_MAINTAINER="purebaba"
 LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=develop
