@@ -9,7 +9,7 @@ on:
       - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
   schedule:
     # 参考 https://jasonet.co/posts/scheduled-actions/
-    - cron: '00 14 * * *' # GMT 15:00 => 北京时间 23:00
+    # - cron: '00 14 * * *' # GMT 15:00 => 北京时间 23:00
   workflow_dispatch:
 
 jobs:
